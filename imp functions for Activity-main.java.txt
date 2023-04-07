@@ -1,0 +1,4 @@
+
+
+1. getTag() - method to fetch the tag of the component on which it is used.
+2. setImageResource() - This function is used to set the image(stored in Drawable folder) for any Imageview.
