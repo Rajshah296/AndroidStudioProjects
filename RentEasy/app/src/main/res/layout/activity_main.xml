@@ -17,17 +17,24 @@
         />
 
     <EditText
+
         android:id="@+id/main_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/logo"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="50dp"
+        android:background="@drawable/custom_border"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/email"
         android:autofillHints="true"
-        android:hint="@string/email_id"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColorHint="#000000"
+        android:textColorHint="@color/white"
         tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     <EditText
@@ -35,13 +42,73 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/main_email"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_border"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
         android:autofillHints="true"
         android:hint="@string/pass"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColorHint="#000000"
+        android:textColorHint="@color/white"
         tools:ignore="VisualLintTextFieldSize" />
 
+    <CheckBox
+        android:id="@+id/Remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_pass"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/white_trans"
+        android:text="@string/remember"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Remember"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_btn"
+        android:text="@string/login"
+        android:textColor="#F06292"
+        android:textStyle="bold"
+
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/Login"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn_red"
+        android:text="@string/sign_up"
+        android:textColor="@color/white_trans"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Forgot_Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignUp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        android:fontFamily="@font/acme"
+        android:text="@string/forgot_pass"
+        android:textColor="#B33F51B5"
+        tools:ignore="TextContrastCheck" />
 </RelativeLayout>

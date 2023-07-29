@@ -2,6 +2,11 @@
     <string name="app_name">RentEasy</string>
     <string name="login_Form_Heading">Login Form</string>
     <string name="RentEasy_logo">Logo</string>
-    <string name="email_id">Email Id</string>
-    <string name="pass">password</string>
+    <string name="pass">Password</string>
+    <string name="email">  Email Id</string>
+
+    <string name="login">Login</string>
+    <string name="remember">Remember Me</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_pass"><u>Forgot Password?</u></string>
 </resources>
