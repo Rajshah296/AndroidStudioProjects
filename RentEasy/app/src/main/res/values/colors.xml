@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_trans">#CCFFFFFF</color>
+    <color name="Pink">#F06292</color>
+    <color name="Darker_Pink">#E15570</color>
+    <color name="Dark_Pink">#B3E15570</color>
+    <color name="Dark_Blue">#B33F51B5</color>
 </resources>
