@@ -11,36 +11,54 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="ScrollViewSize">
-        <ImageView
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/app_logo"
-            android:contentDescription="@string/RentEasy_logo"
-            />
 
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/user"
+            android:hint="@string/Uname"
+            android:inputType="text"
+            style="@style/editTxt_16."
+            android:autofillHints="true"
+
+            />
         <EditText
 
             android:id="@+id/main_email"
-            style="@style/editTxt_16."
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
-            android:layout_below="@id/logo"
+
+            style="@style/editTxt_16."
+            android:layout_below="@id/name"
+            android:layout_marginTop="@dimen/_10sdp"
             android:drawableStart="@drawable/email"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:autofillHints="true"
             android:importantForAutofill="yes"
-            tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TextSizeCheck,TextSizeCheck" />
+             />
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_email"
+            android:drawableStart="@drawable/phone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="@string/contact_no"
+            android:inputType="phone"
+            android:maxLength="10"
+            style="@style/editTxt_16."
+            android:autofillHints="true"
+
+            />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/editTxt_16."
 
-            android:layout_below="@id/main_email"
+            android:layout_below="@id/phone_no"
             android:id="@+id/main_pass"
             android:layout_marginTop="@dimen/_10sdp"
 
@@ -49,45 +67,38 @@
             android:inputType="textPassword"
             android:autofillHints="true"
             android:importantForAutofill="yes"
-            tools:ignore="VisualLintTextFieldSize" />
-
-        <CheckBox
-            android:id="@+id/Remember"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/main_pass"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:buttonTint="@color/white_trans"
-            android:text="@string/remember"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_14sdp"
-            tools:ignore="TextContrastCheck,TextSizeCheck,VisualLintButtonSize" />
-
-        <Button
-            android:id="@+id/Login"
+             />
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Remember"
+            style="@style/editTxt_16."
 
-            style="@style/btn_style_16_1"
-            android:text="@string/login"
-            android:textColor="@color/Pink"
-            tools:ignore="VisualLintButtonSize" />
+            android:layout_below="@id/main_pass"
+            android:id="@+id/confirm_pass"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:drawableStart="@drawable/password"
+            android:hint="@string/confirm_pass"
+            android:inputType="textPassword"
+            android:autofillHints="true"
+            android:importantForAutofill="yes"
+            />
+
+
 
         <Button
             android:id="@+id/SignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/confirm_pass"
 
-            android:layout_below="@id/Login"
-            style="@style/btn_style_16_2"
+            style="@style/btn_style_16_1"
             android:text="@string/sign_up"
-            android:textColor="@color/white_trans"
-            tools:ignore="VisualLintButtonSize,TextContrastCheck,TextContrastCheck" />
+            android:textColor="@color/Pink"
+             />
 
         <TextView
-            android:id="@+id/Forgot_Pass"
+            android:id="@+id/Have_an_acc"
             style="@style/txtView_Style_Login_UI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,9 +106,21 @@
 
 
             android:fontFamily="@font/acme"
-            android:text="@string/forgot_pass"
+            android:text="@string/Acc_exists"
             android:textColor="@color/Dark_Blue"
-            tools:ignore="TextContrastCheck,TextSizeCheck,TextSizeCheck" />
+            />
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_below="@+id/Have_an_acc"
+            style="@style/btn_style_16_2"
+            android:text="@string/login"
+            android:textColor="@color/white_trans"
+             />
+
     </RelativeLayout>
 
 
